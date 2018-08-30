@@ -1,19 +1,16 @@
+Лендинг Пейдж HTML5 шаблон FED
+
+
+Данный landing Pages сверстан Олегом Васильченко для представления выполненных работ в качестве верстальщика и web-програмиста.  
+
+
+Связаться с автором шаблона:
+Facebook: https://www.facebook.com/frontendercode
+GitHab: https://github.com/frontend-coder
+Skype : webrabcom
+Telegram : https://t.me/frontendcoder
+Страница шаблона в интернете https://github.com/frontend-coder/fed
+Портфолио https://frontend-coder.github.io/
+
+
 Авторские права на шаблон принадлежат Василенко Олегу
-
-
-Шаблон сайта портфолио https://frontend-coder.github.io/
-
-Данный шаблон создан c использованием:
-
-
-Bootstrap сетка       : v3.3.7
-Font Awesome          : v4.7.0
-Magnific Popup        : v1.1.0
-Owl Carousel          : v2.2.1
-equalHeights          : v.1.5.2
-nicescroll            : v.3.7.0
-Page scroll to id     : v.1.5.7
-jquery.mixitup.min.js : v2.1.11
-
-
-Спасибо за внимание к моей работе.

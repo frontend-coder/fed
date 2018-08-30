@@ -1,0 +1,55 @@
+/* // задать все переменные
+ */
+$color_button:#e84545;
+$color_title:#2d3033;
+
+
+
+
+$color_form:#202020;
+
+
+
+
+
+
+
+$aksent_color:#202020;
+$slider_color:#282523;
+
+$red-color:#e25050;
+$red_dark_color:#bd4141;
+
+$bacis_color_font:#a2a2a2;
+
+
+
+
+/* p {
+  @include font-size(20px);
+ } */
+
+@mixin padzero {
+padding: 0;
+margin: 0;
+}
+
+
+/* p {
+  @include trans;
+ } */
+
+@mixin trans {
+-moz-transition: all 0.2s ease;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}

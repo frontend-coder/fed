@@ -1,0 +1,27 @@
+ /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
+.#{$fa-css-prefix}-facebook:before { content: $fa-var-facebook; }
+.#{$fa-css-prefix}-instagram:before { content: $fa-var-instagram; }
+.#{$fa-css-prefix}-github-alt:before { content: $fa-var-github-alt; }
+.#{$fa-css-prefix}-hand-peace-o:before { content: $fa-var-hand-peace-o; }
+.#{$fa-css-prefix}-bar-chart-o:before,
+.#{$fa-css-prefix}-bar-chart:before { content: $fa-var-bar-chart; }
+.#{$fa-css-prefix}-pencil:before { content: $fa-var-pencil; }
+.#{$fa-css-prefix}-code:before { content: $fa-var-code; }
+.#{$fa-css-prefix}-tasks:before { content: $fa-var-tasks; }
+.#{$fa-css-prefix}-clock-o:before { content: $fa-var-clock-o; }
+.#{$fa-css-prefix}-users:before { content: $fa-var-users; }
+.#{$fa-css-prefix}-coffee:before { content: $fa-var-coffee; }
+.#{$fa-css-prefix}-map-o:before { content: $fa-var-map-o; }
+.#{$fa-css-prefix}-desktop:before { content: $fa-var-desktop; }
+.#{$fa-css-prefix}-file-code-o:before { content: $fa-var-file-code-o; }
+.#{$fa-css-prefix}-mobile-phone:before,
+.#{$fa-css-prefix}-mobile:before { content: $fa-var-mobile; }
+.#{$fa-css-prefix}-wordpress:before { content: $fa-var-wordpress; }
+.#{$fa-css-prefix}-envelope-o:before { content: $fa-var-envelope-o; }
+.#{$fa-css-prefix}-commenting-o:before { content: $fa-var-commenting-o; }
+.#{$fa-css-prefix}-skype:before { content: $fa-var-skype; }
+.#{$fa-css-prefix}-telegram:before { content: $fa-var-telegram; }
+.#{$fa-css-prefix}-angle-double-up:before { content: $fa-var-angle-double-up; }
+.#{$fa-css-prefix}-phone:before { content: $fa-var-phone; }
