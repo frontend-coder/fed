@@ -673,7 +673,8 @@ body {
 /* оформление блока с соицальными иконками    */
 .social-block {
   margin: 0 0 10px 0;
-  padding: 0; }
+  padding: 0;
+  width: 50%; }
 
 .social-block_icon {
   font-size: 1.2rem;
@@ -918,16 +919,51 @@ footer {
 .portfolio-wrapper:hover img {
   top: 0;
   -webkit-transform: scale(1.35, 1.35);
-  -ms-transform: scale(1.35, 1.35);
-  transform: scale(1.35, 1.35); }
+      -ms-transform: scale(1.35, 1.35);
+          transform: scale(1.35, 1.35); }
 
-/* конец блока портфолио */
-/*все переменные и моды */
-/**стили оформления всех форм обратной связи на сайте
-не зависимо от мест размещения */
 /* стили формы обратной связи */
+.forms-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.forms-wrapper_items {
+  width: 48%; }
+
+.social-boxing {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
 .forms-call {
-  font-size: .875rem; }
+  font-size: .875rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .forma-header p {
   font-size: .938rem;
@@ -935,12 +971,15 @@ footer {
   text-align: left;
   color: #666; }
 
-.forms-call label {
+.forms-call .label_pext {
   display: block;
-  margin: 10px 0; }
+  width: 48%; }
 
-.forms-call input,
-.forms-call textarea {
+.label_area {
+  display: block;
+  width: 100%; }
+
+.forms-call input, .forms-call textarea {
   font-size: .8rem;
   line-height: 30px;
   display: block;
@@ -960,8 +999,7 @@ footer {
   height: 50px;
   resize: none; }
 
-.forms-call input:focus,
-.forms-call textarea:focus {
+.forms-call input:focus, .forms-call textarea:focus {
   color: #222833;
   border-bottom: 1px solid #0cb4ce; }
 
@@ -997,48 +1035,63 @@ footer {
   overflow: hidden;
   max-width: 480px;
   margin: auto;
+  padding: 40px 10px;
   -webkit-transition: all .5s ease .1s;
   -o-transition: all .5s ease .1s;
   transition: all .5s ease .1s;
   border: 1px solid #fff;
-  -webkit-border-radius: 1em;
-          border-radius: 1em;
+  -webkit-border-radius: 1rem;
+          border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.5); }
 
-.forms-calldecor h4,
-.forms-calldecor h5 {
-  font-size: 1.3em;
-  margin: 50px 20px 0;
+.forms-calldecor h4, .forms-calldecor h5 {
+  font-size: 1.3rem;
+  margin: 10px 20px 0;
   text-align: center;
   color: #fff; }
 
 .forms-calldecor h5 {
-  font-size: .96em;
+  font-size: .96rem;
   margin-top: 10px;
   margin-bottom: 30px;
   letter-spacing: 1px; }
 
-.forms-calldecor input,
-.forms-calldecor textarea {
+.forms-calldecor input {
+  display: block;
+  font-size: 1.0rem;
+  text-indent: 20px;
   width: 90%;
-  color: white; }
+  padding: 5px 0;
+  margin: 0 auto 10px;
+  border: 0; }
 
 .forms-calldecor .button-call {
-  float: none;
-  margin-bottom: 40px;
+  width: 100%;
   text-align: center;
-  color: #fff; }
+  color: #0cb4ce; }
+
+.forms-calldecor .button-call .get-buttons {
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px 0 10px 0;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  line-height: 1;
+  -webkit-transition: all .5s ease .1s;
+  -o-transition: all .5s ease .1s;
+  transition: all .5s ease .1s;
+  cursor: pointer; }
+
+.forms-calldecor .button-call .get-buttons:hover {
+  color: #000000;
+  background-color: #0cb4ce; }
 
 .forms-calldecor .mfp-close {
   position: absolute;
   top: 15px;
   right: 15px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px; }
-
-.forms-calldecor .mfp-close-btn-in .mfp-close {
-  font-size: 1.5em;
-  font-weight: bold;
   color: #fff;
   -webkit-border-radius: 3px;
           border-radius: 3px; }
@@ -1102,16 +1155,56 @@ footer {
   -o-transition: all .615s ease-out;
   transition: all .615s ease-out;
   -webkit-transform: translateY(1%);
-  -ms-transform: translateY(1%);
-  transform: translateY(1%);
+      -ms-transform: translateY(1%);
+          transform: translateY(1%);
   opacity: 1; }
 
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   -webkit-transform: translateY(-120%);
-  -ms-transform: translateY(-120%);
-  transform: translateY(-120%);
+      -ms-transform: translateY(-120%);
+          transform: translateY(-120%);
   opacity: 0; }
+
+@media (min-width: 737px) {
+  .container {
+    width: 100%;
+    margin: 0 auto; } }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto; } }
+
+@media (min-width: 800px) {
+  .container {
+    width: 780px;
+    margin: 0 auto; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin: 0 auto; } }
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1004px;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 1080px) {
+  .container {
+    width: 1060px;
+    margin: 0 auto; } }
+
+@media only screen and (min-width: 1190px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto; } }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens  от 0 до 1280 пикселей md*/
@@ -1232,22 +1325,19 @@ footer {
     font-size: 1.4rem; }
   .title-header h3 {
     font-size: 1.050rem; }
-  .calling-me a,
-  .adwise-bottom ul li a {
+  .calling-me a, .adwise-bottom ul li a {
     font-size: .80rem; }
   .adwise-bottom {
     width: 100%; }
   .adwise-bottom ul li a {
     font-size: .770rem; }
-  .process-step_title,
-  .process-work {
+  .process-step_title, .process-work {
     font-size: 1.0rem; }
   .block-title {
     font-size: 1.70rem; }
   .social-block_text a {
     font-size: 1.0rem; }
-  .forms-call input,
-  .forms-call textarea {
+  .forms-call input, .forms-call textarea {
     font-size: .7rem; }
   .logo {
     font-size: 2.0rem; } }

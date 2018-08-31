@@ -77,17 +77,7 @@ gulp.task('scripts', function () {
  'app/libs/typed/typed.min.js',
 'app/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.js',
  'app/libs/mixitup/mixitup.min.js',
-
-
-
-
-
-// 'app/libs/jquery/equalHeights/equalHeights.min.js',
-// 'app/libs/jquery/jquery.nicescroll.min.js',
-// 'app/libs/magnific-popup/jquery.magnific-popup.min.js',
-// 'app/libs/owlcarousel/owl.carousel.min.js',
-// 'app/libs/typed.min.js',
-// 'app/libs/jquery.mixitup.min.js',
+'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 
 'app/libs/common.js'
    ])
