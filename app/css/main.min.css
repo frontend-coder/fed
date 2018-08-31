@@ -20,6 +20,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   -webkit-backface-visibility: hidden; }
 
 .hidden {
@@ -245,7 +246,7 @@ body {
   display: inline-block;
   padding: 0 10px;
   list-style-type: none;
-  border-left: 1px solid #0cb4ce; }
+  border-left: 2px solid #0cb4ce; }
 
 .title-header-li ul li:first-child {
   border: 0; }
@@ -390,15 +391,18 @@ body {
 
 .block-about_box {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .block-about_item {
-  width: 48%;
-  float: left;
-  margin-right: 4%; }
-
-.block-about_item:last-child {
-  margin-right: 0; }
+  width: 48%; }
 
 .block-title {
   font-family: 'Exo2Bold', sans-serif;
@@ -604,11 +608,25 @@ body {
 .block-fact_work .block-title {
   margin-bottom: 16px; }
 
+.fun_row {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .fun-facts_block {
-  width: 95%;
-  margin: 0 auto;
+  width: 21%;
   padding: 25px 15px 35px 15px;
   background-color: rgba(255, 255, 255, 0.5); }
+
+.fun-facts_block:last-child {
+  margin-right: 0; }
 
 .fun-facts_block .fa {
   font-size: 2rem;
@@ -819,22 +837,6 @@ footer {
   display: inline-block;
   padding-top: 66.25%; }
 
-/*
-.item:nth-child(1), .item:nth-child(6) {
-  border-top-color: #ee4266;
-}
-
-.item:nth-child(2), .item:nth-child(5) {
-  border-top-color: #7fb800;
-}
-
-.item:nth-child(3) {
-  border-top-color: #00a6ed;
-}
-
-.item:nth-child(4), .item:nth-child(7) {
-  border-top-color: #ffb400;
-} */
 /* Responsive layout */
 /* 2 columns */
 .item, .gap {
@@ -1193,12 +1195,12 @@ footer {
 
 @media screen and (min-width: 1080px) {
   .container {
-    width: 1060px;
+    width: 1050px;
     margin: 0 auto; } }
 
 @media only screen and (min-width: 1190px) {
   .container {
-    width: 1170px;
+    width: 1160px;
     margin: 0 auto; } }
 
 @media only screen and (min-width: 1200px) {
@@ -1208,6 +1210,22 @@ footer {
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens  от 0 до 1280 пикселей md*/
+@media only screen and (max-width: 1190px) {
+  .hidden-mnu {
+    top: 0px; }
+  .hidden-mnu {
+    background-color: rgba(35, 35, 35, 0.5); } }
+
+@media screen and (max-width: 1080px) {
+  .adwise-bottom {
+    width: 63%; }
+  .adwise {
+    font-size: 1.85rem; }
+  .serves-block {
+    width: 21.50%; }
+  .serves-block_contant {
+    margin-left: 3.320rem; } }
+
 /* Large Devices, Wide Screens  от 0 до 1024 пикселей md*/
 @media only screen and (max-width: 1024px) {
   .hidden-mnu {
@@ -1227,7 +1245,21 @@ footer {
   .adwise-bottom {
     width: 70%; }
   .process-text {
-    text-align: left; } }
+    text-align: left; }
+  .serves-block_icon {
+    float: none;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 10px; }
+  .serves-block_contant {
+    margin-left: 0;
+    float: none; }
+  .block-title {
+    font-size: 2.20rem; }
+  .number_accaunt {
+    font-size: 2.5rem; }
+  .social-block_text a {
+    font-size: 1.1rem; } }
 
 /* Medium Devices, Desktops от 0 до 992 пикселей sm*/
 @media only screen and (max-width: 991px) {
@@ -1262,6 +1294,21 @@ footer {
     width: 80%; } }
 
 /* Medium Devices, Desktops от 0 до 800 пикселеq*/
+@media only screen and (max-width: 800px) {
+  .title-header {
+    padding: 15% 0 10% 0; }
+  .header_img {
+    position: relative;
+    min-height: 670px; }
+  .fun_row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .fun-facts_block {
+    width: 45.8%; }
+  .serves-block {
+    width: 45.5%; } }
+
 /* Small Devices, Tablets 0 до 767 пикселей xs  */
 /* Small Devices, Tablets 0 до 736 пикселей xs  */
 @media only screen and (max-width: 736px) {
